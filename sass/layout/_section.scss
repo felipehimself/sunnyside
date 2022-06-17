@@ -1,0 +1,91 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.section-reverse {
+  flex-direction: row-reverse;
+}
+
+.section-text {
+  max-width: 45rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem 2rem;
+}
+
+.col {
+  // flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.col-img {
+  overflow: hidden;
+  // flex: 1;
+  width: 100%;
+}
+
+.section-img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+
+.section-footer {
+  font-family: $fontPrimary;
+  font-size: 1.4rem;
+  color: $very-dark-desaturated-blue;
+  position: relative;
+  align-self: flex-start;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0 0.5rem;
+
+  &--yellow::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    height: 1rem;
+    width: 100%;
+    background-color: $yellow;
+    bottom: 0;
+    left: 0;
+    opacity: 0.8;
+    border-radius: 5px;
+  }
+
+  &--red::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    height: 1rem;
+    width: 100%;
+    background-color: $soft-red;
+    bottom: 0;
+    left: 0;
+    opacity: 0.8;
+    border-radius: 5px;
+  }
+}
+
+.section-footer:hover {
+  transform: translateY(-1rem);
+}
+
+@media screen and (max-width: 820px) {
+  .section {
+    flex-direction: column;
+  }
+
+  .section-text {
+    align-items: center;
+  }
+}

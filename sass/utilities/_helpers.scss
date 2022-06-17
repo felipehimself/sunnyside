@@ -1,0 +1,21 @@
+.mb-small {
+  margin-bottom: 2rem;
+}
+
+.mb-medium {
+  margin-bottom: 3rem;
+}
+
+.mb-large {
+  margin-bottom: 4rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.media-920-text-center {
+  @media screen and (max-width: 820px) {
+    text-align: center;
+  }
+}

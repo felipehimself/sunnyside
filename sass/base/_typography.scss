@@ -1,0 +1,48 @@
+.font-small {
+  font-size: 1.2rem;
+}
+
+.font-medium {
+  font-size: 1.6rem;
+}
+
+.font-large {
+  font-size: 1.8rem;
+}
+
+.font-extra-large {
+  font-size: 2.4rem;
+}
+
+.heading-two {
+  font-size: 3rem;
+  color: $very-dark-desaturated-blue;
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  font-family: $fontSecondary;
+  color: $very-dark-grayish-blue;
+  font-weight: normal;
+  line-height: 1.7;
+}
+
+.paragraph--green {
+  color: $dark-desaturated-cyan-graphic-design-text;
+}
+
+.paragraph--blue {
+  color: $dark-blue-photography-text;
+}
+
+.heading-three {
+  font-size: 2rem;
+}
+
+.heading-three--green {
+  color: $dark-desaturated-cyan-graphic-design-text;
+}
+
+.heading-three--blue {
+  color: $dark-blue-photography-text;
+}

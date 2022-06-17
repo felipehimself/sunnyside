@@ -1,0 +1,37 @@
+.hero {
+  background-image: url(./../../assets/images/desktop/image-header.jpg);
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-title {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 4.2rem;
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+  color: $colorWhite;
+}
+
+.arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6rem;
+  animation: upAndDown 2s infinite;
+}
+
+@keyframes upAndDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

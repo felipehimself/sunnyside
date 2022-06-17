@@ -1,0 +1,45 @@
+.article {
+  display: flex;
+}
+
+.article-container {
+  width: 100%;
+  position: relative;
+}
+
+.article-item {
+  position: absolute;
+  top: 62%;
+  max-width: 40rem;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 2rem;
+}
+
+.article-item__heading-three {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.article-container--graphic {
+  background-image: url(./../../assets/images/desktop/image-graphic-design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  background-position: center;
+}
+
+.article-container--photography {
+  background-image: url(./../../assets/images/desktop/image-photography.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  background-position: center;
+}
+
+@media screen and (max-width: 820px) {
+  .article {
+    flex-direction: column;
+  }
+}
