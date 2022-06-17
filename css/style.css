@@ -50,11 +50,13 @@ p {
   align-items: center;
   max-width: calc(100vw -50rem);
   margin: 0 auto;
-  padding: 3rem 2rem; }
+  padding: 3rem 2rem;
+  padding-left: 4rem; }
 
 .nav__list {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   list-style: none;
   min-height: 3rem;
   transition: all 0.3s ease; }
@@ -79,7 +81,7 @@ p {
     padding: 1rem 2rem;
     border-radius: 2rem;
     text-transform: uppercase;
-    font-size: 1.6rem; }
+    font-size: 1.4rem; }
 
 .nav__list.active {
   right: 0; }
@@ -115,18 +117,19 @@ p {
     gap: 5rem;
     position: fixed;
     background-color: #2cb4f8;
-    padding: 8rem 6rem;
-    top: -100%;
-    left: 0;
-    right: 0;
-    width: 100vw;
+    padding-top: 10rem;
+    top: 0;
+    right: -100%;
+    margin: 0;
+    width: 55vw;
     height: 100vh;
-    z-index: 200; }
+    z-index: 100;
+    justify-content: flex-start; }
   .hamburger {
     display: block; } }
 
 .nav__list.active {
-  top: 0; }
+  right: 0; }
 
 .mb-small {
   margin-bottom: 2rem; }
