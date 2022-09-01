@@ -18,6 +18,8 @@ navLinks.forEach((link) => {
     removeActive(navLinks);
     link.classList.add('active');
     navList.classList.remove('active');
+    hamburguer.classList.remove('active');
+
   });
 });
 
